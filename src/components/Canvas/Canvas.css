@@ -1,0 +1,50 @@
+.canvas {
+  margin-block-start: 2rem;
+  padding-block-end: 10rem;
+  width: 100vw;
+  height: 100%;
+  min-height: fit-content;
+  background-color: #f5f7f8;
+  padding: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  overflow-x: scroll;
+}
+
+.canvas-column {
+  min-width: 400px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.column-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column-header-left-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.column-title {
+}
+
+.count {
+  margin-inline-start: 10px;
+}
+
+.column-header-right-container {
+  color: #7d7e82;
+}
