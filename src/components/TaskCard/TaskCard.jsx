@@ -5,6 +5,7 @@ import UserIcon from '../UserIcon/UserIcon';
 
 const TaskCard = ({ ticket, groupBy, userData, grouping }) => {
     const { id, priority, status, tag, title, userId } = ticket;
+    console.log("priority: ", priority);
     const truncateTitle = (title, maxLength) => {
         if (title.length > maxLength) {
             return title.substring(0, maxLength) + '...';

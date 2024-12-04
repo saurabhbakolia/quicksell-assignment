@@ -1,7 +1,7 @@
 .task-card {
   min-width: 400x;
   width: 400px;
-  height: 160px;
+  max-height: 160px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #fff;
   border-radius: 6px;
@@ -31,6 +31,14 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 4px;
+}
+
+.task-card-title span {
+  padding-block-start: 4px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .task-card-tags {

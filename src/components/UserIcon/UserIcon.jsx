@@ -7,8 +7,8 @@ const UserIcon = ({ name, available }) => {
     }, [name]);
     const getRandomColor = (name) => {
         const hash = name.split(" ").map((item) => item.charCodeAt(0)).reduce((acc, code) => acc + code, 0);
-        const hue = hash % 360;  // Generate hue based on the hash (for a full color spectrum)
-        return `hsl(${hue}, 70%, 60%)`;  // Use HSL for more readable and varied colors
+        const hue = hash % 360;
+        return `hsl(${hue}, 70%, 60%)`;
     };
     const backgroundColor = React.useMemo(() => getRandomColor(name), [name]);
     return (
